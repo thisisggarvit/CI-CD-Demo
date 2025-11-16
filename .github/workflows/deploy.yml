@@ -20,4 +20,4 @@ jobs:
 
     - name: Deploy on VM
       run: |
-        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ~/ci-cd-demo-site && ./deploy.sh"
+        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd /home/ci-cd-key/CI-CD-Demo && ./deploy.sh"
